@@ -1,5 +1,5 @@
-from fastapi import FastAPI
 import uvicorn
+from fastapi import FastAPI
 
 app = FastAPI(title="ping")
 
@@ -9,6 +9,4 @@ def ping():
     print("Pong!")
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=9696)
-
-
+    uvicorn.run(app, host="0.0.0.0")
