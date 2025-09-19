@@ -16,14 +16,13 @@ def predict_single(customer):
 
 @app.post("/predict")
 def predict(customer: Dict[str, Any]):
-    churn = predict_single(customer)
+    prob = predict_single(customer)
 
     return {
-        "churn_probability": churn_probability,
+        "churn_probability": prob,
         "churn": bool(prob >= 0.5)
     }
 
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=9696)
-    

@@ -1,5 +1,4 @@
 
-
 print('probability of churning =', churn)
 
 if churn >= .5:
