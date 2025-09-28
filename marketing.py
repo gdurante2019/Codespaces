@@ -28,7 +28,7 @@ churn = response.json()
 
 print('response:', churn)
 
-if churn >= .5:
+if churn['churn'] >= 0.5:
     print('send email with promo')
 else:
     print("don't do anything")
