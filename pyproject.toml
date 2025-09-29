@@ -1,7 +1,7 @@
 [project]
-name = "codespaces"
+name = "codespaces-ml-app"
 version = "0.1.0"
-description = "Add your description here"
+description = "Churn prediction service"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

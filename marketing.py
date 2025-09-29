@@ -1,6 +1,7 @@
 import requests
 
-url = 'http://localhost:9696/predict'
+# url = 'http://localhost:9696/predict'
+url = 'https://restless-rain-1525.fly.dev/predict'
 
 customer = {"gender": "male",
  "seniorcitizen": 0,
